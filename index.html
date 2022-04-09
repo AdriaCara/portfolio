@@ -8,9 +8,15 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
     <title>&lt;Mi page/&gt;</title>
   </head>
   <body>
+
     <!-- Menu --->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
@@ -41,8 +47,8 @@
       <div class="container bg-light" style="padding: 1%;">
         <div class="card mb-3 border border-light border-4">
           <div class="row g-0">
-            <div class="col-md-4 bg-light"s>
-              <a type="submit" class="btn btn-light" data-toggle="modal" data-target="#myPhoto"><img src="./images/IndexPhoto/MiPhoto.jpg" class="img-fluid rounded-start"></a>
+            <div class="col-md-4 bg-light">
+              <img src="./images/IndexPhoto/MiPhoto.jpg" class="img-fluid rounded-start" data-toggle="modal" data-target="#myPhoto">
               <h1 style="text-align: center;">&lt;&spades;<b class="text-danger">&hearts;</b>&clubs;<b class="text-danger">&diams;</b>/&gt;</h1>
             </div>
             <div class="col-md-8 text-white bg-dark">
@@ -65,28 +71,22 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Modal -->
-      <div class="modal" id="myPhoto" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>Modal body text goes here.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Save changes</button>
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- Modal -->
+        <div class="modal fade" id="myPhoto" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close bg-dark text-white" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img src="./images/IndexPhoto/MiPhoto.jpg" width="100%">
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
       <!-- Footer -->
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
