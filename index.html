@@ -14,7 +14,7 @@
     <!-- Menu --->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <img src="./images/logo/Logo.png" class="img-thumbnail" style="width: 8%;" alt="">
+        <a href="./index.html" style="width: 8%;"><img src="./images/logo/Logo.png" class="img-thumbnail"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -42,7 +42,7 @@
         <div class="card mb-3 border border-light border-4">
           <div class="row g-0">
             <div class="col-md-4 bg-light"s>
-              <img src="./images/IndexPhoto/MiPhoto.jpg" class="img-fluid rounded-start">
+              <a type="submit" class="btn btn-light" data-toggle="modal" data-target="#myPhoto"><img src="./images/IndexPhoto/MiPhoto.jpg" class="img-fluid rounded-start"></a>
               <h1 style="text-align: center;">&lt;&spades;<b class="text-danger">&hearts;</b>&clubs;<b class="text-danger">&diams;</b>/&gt;</h1>
             </div>
             <div class="col-md-8 text-white bg-dark">
@@ -57,11 +57,32 @@
                   <br /><b class="text-dark">___</b><b class="text-warning">private</b> <b class="text-primary"> String</b> <b class="text-info">description</b> = <b class="text-success">"Curioso"</b>;
                   <br /><b class="text-dark">___</b><b class="text-warning">private</b> <b class="text-primary"> String</b> <b class="text-info">slogan</b> = <b class="text-success">"El saber es poder"</b>;
                   <br /><b class="text-dark">___</b><b class="text-warning">private</b> <b class="text-primary"> String</b> <b class="text-info">sector</b> = <b class="text-success">"Programación"</b>;
-                  <br /><b class="text-dark">___</b><b class="text-warning">private</b> <b class="text-primary"> String</b> <b class="text-info">programmingLenjuage[]</b> = {<b class="text-success">"Java"</b>, <b class="text-success">"HTML"</b>, <b class="text-success">"CSS"</b>, <b class="text-success">"JavaScript"</b>, <b class="text-success">"PHP"</b>}
+                  <br /><b class="text-dark">___</b><b class="text-warning">private</b> <b class="text-primary"> String</b> <b class="text-info">programmingLanguage[]</b> = {<b class="text-success">"Java"</b>, <b class="text-success">"HTML"</b>, <b class="text-success">"CSS"</b>, <b class="text-success">"JavaScript"</b>, <b class="text-success">"PHP"</b>}
                   <br /><b class="text-dark">___</b><b class="text-warning">private</b> <b class="text-primary"> String</b> <b class="text-info">Programmes[]</b> = {<b class="text-success">"VisualStudio Code"</b>, <b class="text-success">"Eclipse"</b>, <b class="text-success">"Microsoft SQL"</b>, <b class="text-success">"Oracle VM VirtualBox"</b>, <b class="text-success">"Laragon"</b>, <b class="text-success">"Github"</b>}
                   <br /><b>}</b>
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal" id="myPhoto" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
